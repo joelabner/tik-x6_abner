@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulir Pendataan</title>
+    </head>
+    <style>
+        body {
+         font-size: 19px;
+         color: #333;
+         background-color: #ECECEC;
+         font-family: Arial, sans-serif;
+         padding-left: 20px;
+         padding-top: 20px;
+         padding-bottom: 20px;
+         padding-inline: 20px;
+        }
+        </style>
+    <body>
+        <form>
+            <label for="nama">Nama Lengkap: </label> <input type="text" id="nama" name="nama" placeholder="Nama Lengkap Anda!" required><br>
+            <br> Data Anda di Form Ini: <input type="search" id="searchdata" name="searchdata" placeholder="Cari Data Anda!">
+            <br> <br>
+            <label for="jeniskelamin">Jenis kelamin: </label>
+            <br>
+            <input type="radio" id="jk" name="jk" value="Laki-laki" checked required> Laki-laki
+            <input type="radio" id="jk" name="jk" value="Perempuan" required> Perempuan
+            <br> <br>
+            Kata Sandi: <input type="password" id="password" name="password" placeholder="Masukkan Password" required>
+            <br> <br>
+            Tanggal Lahir: <input type="date" id="tanggal lahir" name ="tanggallahir" required>
+            <br> <br>
+            Waktu Isi Form: <input type ="time" id="waktu input" name="waktuinput" required>
+            <br> <br>
+            Surel Anda: <input type="email" id="surel" name ="surel" required>
+            <br> <br>
+            Usia Anda: <input type="number" id="usia" name="usia" value="Usia Anda" max="100" min="0" required>
+            <br> <br>
+            Tautan Portofolio: <input type="url" id="portofolio" name="portofolio" required>
+            <br> <br>
+            Sekolah Anda: <br><input type="image" src="https://learn.gonzaga.sch.id/pluginfile.php/1/theme_moove/sliderimage2/1665273338/Web.1.jpg" width="200" height="100" id="fotoprofil" name="fotoprofil" value="Profil Foto" required>
+            <br> <br>
+            Warna Kesukaan: <input type="color" id="warnasuka" name="warnasuka" required>
+            <br> <br>
+            Nomor HP: <input type="tel" id="nohp" name="nohp" required>
+            <br> <br>
+            Kecintaan dengan SMA Gonzaga: <input type="range" id="suka" name="suka" required>
+            <br> <br>
+            <fieldset> Hobi Anda: <br>
+            <label> <input type="checkbox" name="hobi" value="Bernyanyi"> Bernyanyi
+            </label><br>
+            <label> <input type="checkbox" name="hobi" value="Memasak"> Memasak
+            </label><br>
+            <label> <input type="checkbox" name="hobi" value="Membaca"> Membaca
+            </label><br>
+            <label> <input type="checkbox" name="hobi" value="Travelling"> Travelling
+            </label><br>
+            <label> <input type="checkbox" name="hobi" value="Olahraga"> Olahraga
+            </label><br> <label> <input type="checkbox" name="hobi" value="Menulis"> Menulis </label><br><br>
+            <button type='submit' name='kirim'>SUBMIT</button> <input type='reset' name='reset' value='RESET'>
+            </fieldset>
+        </form>
+    </body>
+</html>
