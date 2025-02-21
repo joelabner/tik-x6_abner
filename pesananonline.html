@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FoodEase</title>
+    </head>
+    <style>
+        body {
+         font-size: 19px;
+         color: #333;
+         background-color: #ECECEC;
+         font-family: Arial, sans-serif;
+         padding-left: 20px;
+         padding-top: 20px;
+         padding-bottom: 20px;
+         padding-inline: 20px;
+        }
+        form {
+            font-size: 19px;
+            color: #333;
+            background-color: #ECECEC;
+            font-family: Arial, sans-serif;
+        }
+        </style>
+    <body>
+        Selamat Datang di FoodEase. <br> Silakan mengisi formulir pemesanan ini untuk melanjutkan proses pemesanan! <br> _______________________________________________________________________ <br> <br>
+        <form>
+            <label for="nama">Nama Anda: </label> <input type="text" id="nama" name="nama" placeholder="John Doe" required><br>
+            <br> 
+            Nomor Telepon: <input type="tel" id="nohp" name="nohp" placeholder="08123456789">
+            <br> <br>
+            Alamat: <input type="text" id="alamat" name="alamat" placeholder="Jl. Raya No. 1">
+            <br> <br>
+         Metode Pembayaran: <br>
+            <input type="radio" id="cash" name="pay" value="cash" checked required> Cash
+            <input type="radio" id="transfer" name="pay" value="Transfer" required> Transfer
+            <input type="radio" id="card" name="pay" value="Card" required> Kartu 
+            <input type="radio" id="qris" name="pay" value="Qris" required> QRIS
+            <br> <br>
+            <fieldset> Menu Pilihan: <br>
+                <label> <input type="checkbox" name="menu" value="esteh"> Es Teh Panas
+                </label><br>
+                <label> <input type="checkbox" name="menu" value="tehmanispanas"> Teh Manis Panas
+                </label><br>
+                <label> <input type="checkbox" name="menu" value="ayambakar"> Ayam Bakar
+                </label><br>
+                <label> <input type="checkbox" name="menu" value="ayamgoreng"> Ayam Goreng
+                </label><br>
+                <label> <input type="checkbox" name="menu" value="pacarorang"> Pacar Orang
+                </label><br> <label> <input type="checkbox" name="hobi" value="Menulis"> Puding Buah </label>
+            </fieldset> <br> <br>
+            <fieldset> Jumlah Pesanan: <br>
+            Jumlah Pesanan 1: <input type="number" id="p1" name="pes1" value="pes1" max="100" min="0" required><br>
+            Jumlah Pesanan 2: <input type="number" id="p2" name="pes2" value="pes2" max="100" min="0" placeholder="Ops"><br>
+            Jumlah Pesanan 3: <input type="number" id="p3" name="pes3" value="pes3" max="100" min="0" placeholder="Ops"><br>
+            Jumlah Pesanan 4: <input type="number" id="p4" name="pes4" value="pes4" max="100" min="0" placeholder="Ops"><br>
+            Jumlah Pesanan 5: <input type="number" id="p5" name="pes5" value="pes5" max="100" min="0" placeholder="Ops"><br>
+            Jumlah Pesanan 6: <input type="number" id="p6" name="pes6" value="pes6" max="100" min="0" placeholder="Ops"><br>
+            </fieldset><br>
+            Catatan Tambahan: <input type="text" id="cat" name="cat" placeholder="Opsional"><br><br>
+            Waktu Pengiriman: <input type ="time" id="waktukirim" name="waktukirim" required>
+            Tanggal Pengiriman: <input type ="date" id="senddate" name="tanggalkirim" required>
+            <br> <br> Pengemasan: <br>
+            <input type="radio" id="stry" name="kemas" value="stry" checked required> Stereofoam
+            <input type="radio" id="kotak" name="kemas" value="kotak" required> Kotak
+            <input type="radio" id="plastik" name="kemas" value="plastik" required> Plastik
+            <input type="radio" id="kardus" name="kemas" value="kardus" required> Kardus
+        </form>    
+    </body>
+</html>
