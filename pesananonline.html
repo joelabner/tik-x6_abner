@@ -13,28 +13,55 @@
          padding-top: 20px;
          padding-bottom: 20px;
          padding-inline: 20px;
+         text-align: center;
+         padding-left: 25%;
+         padding-right: 25%; 
         }
         form {
+            float: center;
+            font-size: 19px;
+            color: #333;
+            background-color: #ECECEC;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-left: 20%;
+            padding-right: 20%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);            
+        }
+        button {
             font-size: 19px;
             color: #333;
             background-color: #ECECEC;
             font-family: Arial, sans-serif;
         }
+        fieldset {
+            padding-left: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-inline: 20px;
+            text-align: justify;
+        }
+        h4 {
+            color: red;
+        }
         </style>
     <body>
-        Selamat Datang di FoodEase. <br> Silakan mengisi formulir pemesanan ini untuk melanjutkan proses pemesanan! <br> <hr>
+    <h1>Selamat Datang di FoodEase! </h1><h4> Silakan mengisi formulir ini untuk melanjutkan proses pemesanan. </h4><hr> <br>
         <form>
+            <br>
             <label for="nama">Nama Anda: </label> <input type="text" id="nama" name="nama" placeholder="John Doe" required><br>
             <br> 
-            Nomor Telepon: <input type="tel" id="nohp" name="nohp" placeholder="08123456789">
+            Nomor Telepon: <input type="tel" id="nohp" name="nohp" placeholder="08123456789" required>
             <br> <br>
-            Alamat: <input type="text" id="alamat" name="alamat" placeholder="Jl. Raya No. 1">
+            Alamat: <input type="text" id="alamat" name="alamat" placeholder="Jl. Raya No. 1" required>
             <br> <br>
-         Metode Pembayaran: <br>
-            <input type="radio" id="cash" name="pay" value="cash" checked required> Cash
-            <input type="radio" id="transfer" name="pay" value="Transfer" required> Transfer
-            <input type="radio" id="card" name="pay" value="Card" required> Kartu 
-            <input type="radio" id="qris" name="pay" value="Qris" required> QRIS
+            <label for="pay">Metode Pembayaran</label>
+            <select name="pay" id="pay" required>
+              <option value="qris">QRIS</option>
+              <option value="cash">TUNAI</option>
+              <option value="card">KARTU</option>
+              <option value="transfer">TRANSFER BANK</option>
+            required</select>
             <br> <br>
             <fieldset> Menu Pilihan: <br>
                 <label> <input type="checkbox" name="menu" value="esteh"> Es Teh Panas
@@ -64,11 +91,9 @@
             <input type="radio" id="kotak" name="kemas" value="kotak" required> Kotak
             <input type="radio" id="plastik" name="kemas" value="plastik" required> Plastik
             <input type="radio" id="kardus" name="kemas" value="kardus" required> Kardus
-            <br> <br> Tingkat Kepedasan: <br>
-            <input type="radio" id="pd1" name="pedas" value="nopedas" checked required> Tidak Pedas
-            <input type="radio" id="pd2" name="pedas" value="pedas1" required> Level 1
-            <input type="radio" id="pd3" name="pedas" value="pedas2" required> Level 2
-            <input type="radio" id="pd4" name="pedas" value="pedas3" required> Level 3
+            <br><br><input type="submit" id="submit" name="submit" value="KIRIM">
+            <input type="reset" id="reset" name="reset" value="RESET">
+            <br><br>
         </form>    
     </body>
 </html>
