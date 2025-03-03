@@ -112,10 +112,17 @@
             opacity: 1;
             transition: 0.3s;
             border-radius: 25px;
+            cursor: pointer;
         }
-
+        @media screen and (max-width: 600px) {
+        .col-25, .col-75, input[type=submit] {
+         width: 100%;
+            margin-top: 0;
+            }
+        }
         button:hover {opacity: 0.6}
         </style>
+        
     <body>
     <h1>Selamat Datang di FoodEase! </h1><h4> Silakan mengisi formulir ini untuk melanjutkan proses pemesanan. </h4><hr> <br>
         <form>
