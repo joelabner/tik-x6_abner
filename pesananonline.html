@@ -22,7 +22,7 @@
             font-size: 19px;
             color: #333;
             background-color: #ECECEC;
-            font-family: Arial, sans-serif;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             text-align: center;
             padding-left: 20%;
             padding-right: 20%;
@@ -44,6 +44,70 @@
         h4 {
             color: red;
         }
+
+        input[type=text], select, textarea{
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            resize: vertical;
+            }
+
+            input[type=tel], select, textarea{
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            resize: vertical;
+            }
+
+        input[type=date], select, date{
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        resize: vertical;
+        }
+
+        input[type=time], select, time{
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        resize: vertical;
+        }
+
+        input[type=reset], reset{
+        background-color: #f4511e;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        font-size: 16px;
+        margin: 4px 2px;
+        opacity: 1;
+        transition: 0.3s;
+        border-radius: 25px;
+        }
+
+        button {
+            background-color: #24921a;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            font-size: 16px;
+            margin: 4px 2px;
+            opacity: 1;
+            transition: 0.3s;
+            border-radius: 25px;
+        }
+
+        button:hover {opacity: 0.6}
         </style>
     <body>
     <h1>Selamat Datang di FoodEase! </h1><h4> Silakan mengisi formulir ini untuk melanjutkan proses pemesanan. </h4><hr> <br>
@@ -53,7 +117,8 @@
             <br> 
             Nomor Telepon: <input type="tel" id="nohp" name="nohp" placeholder="08123456789" required>
             <br> <br>
-            Alamat: <input type="text" id="alamat" name="alamat" placeholder="Jl. Raya No. 1" required>
+            <label for="alamat">Alamat:</label><br>
+            <textarea id="alamat" name="alamat" rows="1" placeholder="Alamat Anda" required></textarea>
             <br> <br>
             <label for="pay">Metode Pembayaran</label>
             <select name="pay" id="pay" required>
@@ -84,15 +149,15 @@
             Jumlah Pesanan 6: <input type="number" id="p6" name="pes6" value="pes6" max="100" min="0" placeholder="Ops"><br>
             </fieldset><br>
             Catatan Tambahan: <input type="text" id="cat" name="cat" placeholder="Opsional"><br><br>
-            Waktu Pengiriman: <input type ="time" id="waktukirim" name="waktukirim" required>
+            Waktu Pengiriman: <input type ="time" id="waktukirim" name="waktukirim" required><br><br>
             Tanggal Pengiriman: <input type ="date" id="senddate" name="tanggalkirim" required>
             <br> <br> Pengemasan: <br>
             <input type="radio" id="stry" name="kemas" value="stry" checked required> Stereofoam
             <input type="radio" id="kotak" name="kemas" value="kotak" required> Kotak
             <input type="radio" id="plastik" name="kemas" value="plastik" required> Plastik
             <input type="radio" id="kardus" name="kemas" value="kardus" required> Kardus
-            <br><br><input type="submit" id="submit" name="submit" value="KIRIM">
-            <input type="reset" id="reset" name="reset" value="RESET">
+            <br><br><button type="submit">Pesan Sekarang</button><br>
+            <input type="reset"></input>
             <br><br>
         </form>    
     </body>
