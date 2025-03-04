@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gonzaga SuperApp</title>
+    </head>
+    <style>
+        body {
+         font-size: 19px;
+         color: #333;
+         background-color: #ECECEC;
+         font-family: Arial, sans-serif;
+         padding-left: 20px;
+         padding-top: 20px;
+         padding-bottom: 20px;
+         padding-inline: 20px;
+         text-align: center;
+         padding-left: 25%;
+         padding-right: 25%; 
+        }
+        form {
+            float: center;
+            font-size: 19px;
+            color: #333;
+            background-color: #ECECEC;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            text-align: center;
+            padding-left: 20%;
+            padding-right: 20%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            border-radius: 30px;            
+        }
+        button {
+            font-size: 19px;
+            color: #333;
+            background-color: #ECECEC;
+            font-family: Arial, sans-serif;
+        }
+        fieldset {
+            padding-left: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-inline: 20px;
+            text-align: justify;
+        }
+        h4 {
+            color: red;
+        }
+
+        input[type=text], select, textarea{
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            resize: vertical;
+            }
+
+            input[type=email], email{
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            resize: vertical;
+            }
+
+            input[type=tel], select, textarea{
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            resize: vertical;
+            }
+
+        input[type=date], select, date{
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        resize: vertical;
+        }
+
+        input[type=time], select, time{
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        resize: vertical;
+        }
+
+        input[type=reset], reset{
+        background-color: #f4511e;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        font-size: 16px;
+        margin: 4px 2px;
+        opacity: 1;
+        transition: 0.3s;
+        border-radius: 25px;
+        }
+
+        input[type=reset]:hover {opacity: 0.7}
+
+        fieldset {
+            border-radius: 25px;
+        }
+
+        button {
+            background-color: #24921a;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            font-size: 16px;
+            margin: 4px 2px;
+            opacity: 1;
+            transition: 0.3s;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+        @media screen and (max-width: 600px) {
+        .col-25, .col-75, input[type=submit] {
+         width: 100%;
+            margin-top: 0;
+            }
+        }
+        button:hover {opacity: 0.6}
+        </style>
+        
+    <body>
+    <h1>Gonzaga SuperApp </h1><h4> Silakan mengisi formulir ini sebagai bentuk evaluasi aplikasi kami. <br> Pendapat Anda sangat berharga untuk pengembangan aplikasi kedepannya. <br> Luangkan waktu 1-5 menit untuk mengisi survei ini! </h4><hr> <br>
+        <form>
+            <br>
+            <label for="nama">Nama Anda: </label> <input type="text" id="nama" name="nama" placeholder="John Doe" required><br>
+            <br> 
+            Nomor Telepon: <input type="tel" id="nohp" name="nohp" placeholder="08123456789" required>
+            Alamat Surel: <input type="email" id="email" name="email" placeholder="someone@your.domain" required>
+            <br> <br>
+            <label for="user">Tipe Pengguna</label>
+            <select name="user" id="user" required>
+              <option value="student">Siswa/I</option>
+              <option value="teacher">Guru</option>
+              <option value="parent">Orang Tua</option>
+            </select>
+            <br> <br>
+            <label for="feature">Fitur yang Sering Digunakan</label>
+            <select name="feature" id="feature" required>
+              <option value="jdwl">Jadwal</option>
+              <option value="scr">Nilai</option>
+              <option value="ann">Pengumuman</option>
+            </select>
+            <br> <br> Pengemasan: <br>
+            <input type="radio" id="s1" name="kemas" value="s1" checked required> 1 = Sangat Buruk
+            <input type="radio" id="s2" name="kemas" value="s2" required> 2
+            <input type="radio" id="s3" name="kemas" value="s3" required> 3
+            <input type="radio" id="s4" name="kemas" value="s4" required> 4 = Sangat Baik
+            <br><br> Saran/Masukan Pengembang Aplikasi: <input type="text" id="cat" name="cat" placeholder="Opsional"><br><br>
+            <button type="submit">Kirim Masukan</button><br>
+            <input type="reset"></input>
+            <br><br>
+        </form>    
+    </body>
+</html>
