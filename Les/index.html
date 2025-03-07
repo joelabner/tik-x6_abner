@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EduLearn</title>
+    </head>
+    <style>
+        body {
+         font-size: 19px;
+         color: #333;
+         background-color: #ECECEC;
+         font-family: Arial, sans-serif;
+         padding-left: 20px;
+         padding-top: 20px;
+         padding-bottom: 20px;
+         padding-inline: 20px;
+         text-align: center;
+         padding-left: 25%;
+         padding-right: 25%; 
+        } form { float: center; font-size: 19px;color: #333; background-color: #ECECEC;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;text-align: center;padding-left: 20%;padding-right: 20%;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);border-radius: 30px; }button { font-size: 19px; color: #333;background-color: #ECECEC;font-family: Arial, sans-serif;} fieldset {
+            padding-left: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-inline: 20px;
+            text-align: justify;
+        }
+        h4 {
+            color: red;
+        }
+
+        input[type=text], select, textarea{
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            resize: vertical;
+            }
+
+            input[type=number], select, textarea{
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            resize: vertical;
+            }
+
+            input[type=email], select, textarea{
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            resize: vertical;
+            }
+
+            input[type=tel], select, textarea{
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            resize: vertical;
+            }
+
+        input[type=date], select, date{
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        resize: vertical;
+        }
+        .button-class {
+			background-color: #24921a;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            font-size: 16px;
+            margin: 4px 2px;
+            opacity: 1;
+            transition: 0.3s;
+            border-radius: 25px;
+            cursor: pointer;
+		}
+
+        input[type=reset], reset{
+        background-color: #f4511e;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        font-size: 16px;
+        margin: 4px 2px;
+        opacity: 1;
+        transition: 0.3s;
+        border-radius: 25px;
+        }
+
+        input[type=reset]:hover {opacity: 0.7}
+        @media screen and (max-width: 600px) {
+        .col-25, .col-75, input[type=submit] {
+         width: 100%;
+            margin-top: 0;
+            }
+        }
+        button:hover {opacity: 0.6}
+        </style>
+        
+    <body>
+    <h1>EduLearn</h1><h4> Silakan mengisi formulir di bawah ini untuk mendaftar kursus di EduLearn!</h4><hr> <br>
+        <form>
+            <br>
+            <label for="nama">Nama Lengkap: </label> <input type="text" id="nama" name="nama" placeholder="John Doe" required><br>
+            <br> 
+            Alamat E-Mail: <input type="email" id="email" name="email" placeholder="name@your.own" required>
+            <br><br>Nomor Telepon: <input type="tel" id="notelp" name="notelp" placeholder="0812345678" required>
+            <br><br>Tanggal Lahir: <input type="date" id="born" name="born" required>
+            <br><br>
+            <a href="details.html" class="button-class">
+                Selanjutnya</a><br><br>
+            <input type="reset"></input>
+            <br><br>
+        </form>    
+    </body><br><br><br>
+    <footer><hr>©2025 by TIM IT Kolese Gonzaga</footer>
+</html>
