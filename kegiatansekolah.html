@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kolese Gonzaga</title>
+    </head>
+    <style>
+        body {
+         font-size: 19px;
+         color: #333;
+         background-color: #ECECEC;
+         font-family: Arial, sans-serif;
+         padding-left: 20px;
+         padding-top: 20px;
+         padding-bottom: 20px;
+         padding-inline: 20px;
+         text-align: center;
+         padding-left: 25%;
+         padding-right: 25%; 
+        } form { float: center; font-size: 19px;color: #333; background-color: #ECECEC;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;text-align: center;padding-left: 20%;padding-right: 20%;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);border-radius: 30px; }button { font-size: 19px; color: #333;background-color: #ECECEC;font-family: Arial, sans-serif;} fieldset {
+            padding-left: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-inline: 20px;
+            text-align: justify;
+        }
+        h4 {
+            color: red;
+        }
+
+        input[type=text], select, textarea{
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            resize: vertical;
+            }
+
+            input[type=number], select, textarea{
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            resize: vertical;
+            }
+
+            input[type=email], select, textarea{
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            resize: vertical;
+            }
+
+            input[type=tel], select, textarea{
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            resize: vertical;
+            }
+
+        input[type=date], select, date{
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        resize: vertical;
+        }
+
+        input[type=time], select, time{
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        resize: vertical;
+        }
+
+        footer {
+            animation:forwards;
+            color:#f4511e;
+            size:7.5px;
+        }
+        input[type=reset], reset{
+        background-color: #f4511e;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        font-size: 16px;
+        margin: 4px 2px;
+        opacity: 1;
+        transition: 0.3s;
+        border-radius: 25px;
+        }
+
+        input[type=reset]:hover {opacity: 0.7}
+
+        fieldset {
+            border-radius: 25px;
+        }
+
+        button {
+            background-color: #24921a;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            font-size: 16px;
+            margin: 4px 2px;
+            opacity: 1;
+            transition: 0.3s;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+        @media screen and (max-width: 600px) {
+        .col-25, .col-75, input[type=submit] {
+         width: 100%;
+            margin-top: 0;
+            }
+        }
+        button:hover {opacity: 0.6}
+        </style>
+        
+    <body>
+    <h1>Lomba Sains dan Teknologi </h1><h4> Silakan isi formulir ini untuk registrasi lebih lanjut! <br> Hubungi <b>081212102398</b> apabila sudah mengisi dengan format pesan KONFIRMASI_NIS_REGISTER </h4><hr> <br>
+        <form>
+            <br>
+            <label for="nama">Nama Lengkap: </label> <input type="text" id="nama" name="nama" placeholder="John Doe" required><br>
+            <br> 
+            Nomor Induk Siswa: <input type="number" id="nis" name="nis" placeholder="12345" min="1" maxlength="10">
+            <br> <br>
+            <label for="kelas">Kelas</label>
+            <select name="kelas" id="kelas" required>
+              <option value="x-1">X-1</option>
+              <option value="x-2">X-2</option>
+              <option value="x-3">X-3</option>
+              <option value="x-4">X-4</option>
+              <option value="x-5">X-5</option>
+              <option value="x-6">X-6</option>
+              <option value="x-7">X-7</option>
+              <option value="x-8">X-8</option>
+              <option value="xi-1">XI-1</option>
+              <option value="xi-2">XI-2</option>
+              <option value="xi-3">XI-3</option>
+              <option value="xi-4">XI-4</option>
+              <option value="xi-5">XI-5</option>
+              <option value="xi-6">XI-6</option>
+              <option value="xi-7">XI-7</option>
+              <option value="xi-8">XI-8</option>
+              <option value="xii-1">XII-1</option>
+              <option value="xii-2">XII-2</option>
+              <option value="xii-2">XII-3</option>
+              <option value="xii-3">XII-4</option>
+              <option value="xii-4">XII-5</option>
+              <option value="xii-5">XII-6</option>
+              <option value="xii-6">XII-7</option>
+              <option value="xii-7">XII-8</option>
+            </select>
+            <br> <br>
+            <label for="jurusan">Jurusan</label>
+            <select name="jurusan" id="jurusan" required>
+              <option value="mipa">MIPA</option>
+              <option value="ips">IPS</option>
+              <option value="bhs">BAHASA</option>
+            </select>
+            <br> <br>
+            <fieldset> Pilihan Lomba <br>
+                <label> <input type="checkbox" name="lomba" value="sains"> Sains
+                </label><br>
+                <label> <input type="checkbox" name="lomba" value="teknologi"> Teknologi</label>
+            </fieldset> <br>
+            Alamat E-Mail: <input type="email" id="email" name="email" placeholder="name@your.own" required>
+            <br><br>Nomor Telepon: <input type="tel" id="notelp" name="notelp" placeholder="0812345678" required>
+            <br><br>
+            <button type="submit">Registrasi</button><br>
+            <input type="reset"></input>
+            <br><br>
+        </form>    
+    </body><br><br><br>
+    <footer><hr>©2025 by TIM IT Kolese Gonzaga</footer>
+</html>
